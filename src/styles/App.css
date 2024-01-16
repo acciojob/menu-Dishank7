@@ -1,12 +1,31 @@
 h1 {
-    color: #27aedb;
+    color: #235198;
     text-align: center;
     }
     
 
-button{
+.btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-div button{
+    border: none;
+    background-color: white;
+    color: rgb(143, 114, 40);
+    font-weight: bolder;
+    cursor: pointer;
+}
+.menu-data{
+  border: 1px solid red;
+
+}
+
+/* button{
     color: #27aedb;
     text-align: center;
     justify-content: center;
     align-items: center;
-}
+} */

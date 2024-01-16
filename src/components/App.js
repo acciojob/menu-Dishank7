@@ -1,2 +1,26 @@
-<p>Now I can render any React component on any DOM node I want using ReactDOM.render</p>
+
+import React ,{useState} from "react"
+import Navbar from "./Navbar"
+import DisplayMenu from "./DisplayMenu"
+
+
+
+const App = () =>{
+   
+    const [menu , setmenu] = useState("")
+
+    return(
+        <div>
+            <Navbar setmenu = {setmenu}/>
+
+            {
+                menu!="" &&   <DisplayMenu menu={menu}/>
+            }
+          
+        </div>
+    )
+}
+
+export default App
+
 
